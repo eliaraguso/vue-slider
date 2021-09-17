@@ -1,0 +1,28 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+.flex {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#carousel {
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    font-size: 3rem;
+}
