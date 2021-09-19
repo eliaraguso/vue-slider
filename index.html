@@ -13,18 +13,16 @@
       <div class="container">
         <div id="carousel">
             <div id="carousel-prev">
-                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-left" @click="prevImage()"></i>
             </div>
             <div id="carousel-images">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2q-xhu3x4S1hBIl-Z7gjjMalz4MwHLtxcAg&usqp=CAU" alt="">
+                <img :src="images[imageIndex]" alt="">
                 <div class="carousel-bullets">
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle" v-for="(image, index) in images" :class="imageIndex == index ? 'active' : 'null'"></i>
                 </div>
             </div>
             <div id="carousel-next">
-                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right" @click="nextImage()"></i>
             </div>
 
         </div>

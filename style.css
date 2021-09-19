@@ -15,6 +15,9 @@
     justify-content: center;
 }
 
+.active {
+    color: blue;
+}
 
 #carousel {
     display: flex;
@@ -25,6 +28,10 @@
 .fa-chevron-left,
 .fa-chevron-right {
     font-size: 3rem;
+}
+
+.fa-circle {
+    margin: 0 5px;
 }
 
 #carousel-images {
@@ -41,5 +48,9 @@
     padding: 10px;
     background-color: rgba(71, 71, 71, 0.514);
     color: white;
+}
+
+img {
+    border-radius: 25px;
 }
 
