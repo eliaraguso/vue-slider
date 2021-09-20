@@ -43,10 +43,10 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(71, 71, 71, 0.514);
+    background-color: rgba(0, 0, 0, 0.671);
     color: white;
 }
 

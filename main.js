@@ -19,8 +19,16 @@ const app = new Vue({
             this.imageIndex--;
             if (this.imageIndex < 0) {
                 this.imageIndex = this.images.length - 1;
-            } 
-
+            }
+        },
+        isBulletActive: function (indexBullet) {
+            if (this.imageIndex == indexBullet) {
+                return "active";
+            }
+            return "";
+        },
+        clickBullet: function(indexBullet) {
+            this.imageIndex = indexBullet;
         }
         
     }
